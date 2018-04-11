@@ -1,9 +1,9 @@
 function isBishopMoveValid(start, end) {
 // Calculate x and y coordinates of the positions on the board
-  var x1 = start.charAt(0).charCodeAt() - 96;
-  var y1 = +start.charAt(1);
-  var x2 = end.charAt(0).charCodeAt() - 96;
-  var y2 = +end.charAt(1);
+var x1 = start[0].charCodeAt() - 96;
+var y1 = +start[1];
+var x2 = end[0].charCodeAt() - 96;
+var y2 = +end[1];
 /* There are 2 lines going through each position,
    if at least one of the lines is common for start and end positions,
    then the move is valid.
@@ -29,4 +29,4 @@ function isBishopMoveValid(start, end) {
   );
 }
 
-console.log(moveBishop("g3", "c7"));
+console.log(isBishopMoveValid("g3", "c7"));
